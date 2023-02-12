@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #663E06;
+    --color2: #EAAB54;
+    --color3: #E68C0E;
+    --color4: #665742;
+    --color5: #B36D0B;
+}
+
+body {
+    background-color: var(--color2);
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color1);
+    color: var(--color3);
+    padding: 10px;
+    border-bottom: 2px solid var(--color3);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    transition: .4s;
+}
+
+header a:hover {
+    color: var(--color3);
+}
+
+main {
+    max-width: 1000px;
+    margin: 8px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.card {
+    background-color: var(--color5);
+    max-width: 300px;
+    /* height: 500px; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.card img {
+    max-width: 290px;
+    height: 400px;
+}
+
+.btn-actions {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.btn-actions > button {
+    width: 50%;
+    padding: 10px;
+}
+
+.card h2 {
+    text-transform: uppercase;
+    color: var(--color1);
+}
+
+.card p {
+    margin: 6px 0;
+}
+
+.card p i {
+    color: yellow;
+    font-size: 17px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.btn {
+    color: white;
+    background-color: var(--color1);
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--color3);
+    border: 1px solid var(--color3);
+}
+
+.modal {
+    position: fixed;
+    background-color: #e68c0ea6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.input-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    padding: 10px;
+    border: 2px solid var(--color3);
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-container h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.form-control input {
+    border: 1px solid var(--color3);
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-container button {
+    margin-top: 10px;
+    height: 30px;
+}
+
+div.input-container {
+    width: 100%;
+}
